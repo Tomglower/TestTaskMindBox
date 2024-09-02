@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaCalculator", "AreaCalculator\AreaCalculator.csproj", "{D79C56B0-A1CD-4B34-952C-D25817D9E516}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaLibrary", "AreaLibrary\AreaLibrary.csproj", "{9820F835-CC72-453F-90B5-7DCDB2DDACAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaCalculator.Library", "AreaCalculator.Library\AreaCalculator.Library.csproj", "{9820F835-CC72-453F-90B5-7DCDB2DDACAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaCalculator.Test", "AreaCalculator.Test\AreaCalculator.Test.csproj", "{4E276930-FE4E-4DBD-AEB4-64A2A9364C5B}"
 	ProjectSection(ProjectDependencies) = postProject
