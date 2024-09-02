@@ -18,3 +18,23 @@
 - ### IsRightTriangle_OK: Проверяет, правильно ли определяется прямоугольный треугольник
 - ### IsRightTriangle_False: Проверяет, что неверный треугольник не определяется как прямоугольный
 - ### NotTriangle_OK: Проверяет, выбрасывается ли исключение при попытке создания некорректного треугольника
+--- 
+### Задание 3 
+Предположим, что у нас таблицы такого вида:
+| Products   |     
+|------------|
+| ProductID  | 
+| ProductName| 
+| CategoryID |   
+
+| Categories   |  
+|--------------|
+| CategoryID   | 
+| CategoryName | 
+   
+Для выборки  всех пар "Имя продукта – Имя категории" необъодимо использовать запрос:
+```sql
+SELECT Products.ProductName, Categories.CategoryName FROM Products LEFT JOIN Categories ON Products.CategoryID = Categories.CategoryID ORDER BY  Products.ProductName
+```
+где, мы выбираем столбцы `ProductName` и `CategoryName` из соответствующих таблиц, после чего выполняем левое соединение таблицы `Products` с таблицей `CAtegories` и вызываем условие соединения таблиц, связывая строки `Products` и  `Categories` если совпадают `CategoryID`, если у продукта нет категории, то будет выведен `null`, после чего запрос будет отсортирован в алфавитном порядке. 
+ 
